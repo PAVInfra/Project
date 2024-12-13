@@ -1,0 +1,28 @@
+/* Container for the service page */
+.container {
+  padding: 1rem;
+}
+
+/* Title styling */
+.title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Search input styling */
+.searchInput {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+/* Flex container for the service cards */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}

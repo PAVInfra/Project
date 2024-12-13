@@ -1,0 +1,37 @@
+/* src/components/AboutUs.module.css */
+.aboutUsContainer {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .aboutUsHeading {
+    margin-bottom: 20px;
+  }
+  
+  .aboutUsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .aboutUsImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .aboutUsImage:hover {
+    transform: scale(1.1);
+  }
+  
+  .whyWeStandApart {
+    text-align: center;
+  }
+  

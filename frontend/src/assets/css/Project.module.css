@@ -1,0 +1,71 @@
+.project {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial, sans-serif";
+}
+.heading {
+  float: center;
+}
+
+.tabcontainer {
+  width: 100%;
+  /* border: 1px solid #ccc; */
+  background-color: white;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-top: 10px;
+}
+
+.tabbuttons {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow-x: auto;
+  /* background-color: #f9f9f9; */
+  white-space: nowrap;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.tabbuttons::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera 
+    */
+}
+
+.tabbutton {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+
+  background-color: #ddd;
+  border-bottom: 5px solid #ddd;
+}
+
+.tabbutton:hover {
+  background-color: grey;
+  border-bottom: 5px solid grey;
+}
+.tabbuttonactive {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+
+  background-color: #ddd;
+  border-bottom: 5px solid #d89090;
+}
+
+.tabcontent {
+  padding: 40px;
+  /* background-color: #fff; */
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  gap: 2rem;
+}

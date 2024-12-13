@@ -1,0 +1,87 @@
+.carousel {
+    position: relative;
+    width: screen;
+    max-height: 50vh;
+  }
+   .carousel .control-arrow {
+    background: transparent;
+    border: none;
+    z-index: 2;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 1; 
+    transition: background 0.3s ease;
+  }
+  
+  .carousel .control-next.control-arrow:before,
+  .carousel .control-prev.control-arrow:before {
+    display: none;
+  }
+  
+  .carousel .control-next {
+    right: 20px;
+  }
+  
+  .carousel .control-prev {
+    left: 20px;
+  }
+  
+  .carousel .control-next.control-arrow {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel .control-prev.control-arrow {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel .text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+   
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Set fixed height for the carousel and adjust images to fit */
+.carousel .carousel-slider {
+   max-height: 50vh; /* Set the height to 50% of the viewport height */
+}
+
+.carousel .carousel-slider .slide {
+    height: 100%; /* Ensure slides take up full height of the carousel */
+    display: flex; /* Use flexbox to center images */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+.carousel .carousel-slider .slide img.carousel-image {
+    max-height: 100%; /* Ensure images fit within the slide height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Custom styles for the carousel legend */
+.carousel .legend {
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background */
+    color: white; /* White text color */
+    padding: 10px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Position at the bottom of the image */
+    width: 100%; /* Full width */
+    text-align: center; /* Centered text */
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
