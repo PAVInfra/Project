@@ -53,7 +53,7 @@ const Home = () => {
           scrollArea={null}
         />
       </div>
-      <div className="text-4xl font-bold pt-10 justify-left text-left">
+      {/* <div className="text-4xl font-bold pt-10 justify-left text-left">
         Awards & Achievements
       </div>
 
@@ -76,10 +76,10 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <Machines />
       <Graph />
+      <Machines />
 
       <div className="flex flex-col items-center justify-center h-screen text-center">
         <Maps2 />
